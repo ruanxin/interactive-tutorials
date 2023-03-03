@@ -14,7 +14,7 @@
         "text": "setup-access.md"
       },
       {
-        "title": "Enable other modules",
+        "title": "Observer & Enable other modules",
         "text": "modules.md"
       }
     ],
@@ -32,6 +32,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-2nodes"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }

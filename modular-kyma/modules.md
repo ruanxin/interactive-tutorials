@@ -1,13 +1,25 @@
-You can now enable that module in the Kyma Dashboard. Go to the namespace kyma-system, open Kyma resource (in the Kyma section), edit it and add `keda` or `cluster-ip` module from beta channel. 
+You can now enable that module in the Kyma Dashboard. Go to the namespace `kyma-system`, open the Kyma resource (in the `Kyma` section), edit it and add `keda` or `cluster-ip` module from beta channel. 
 
-If you prefer CLI you can enable Keda using this command:
+Alternatively, feel free to observe all available modules in the cluster with the CLI:
 ```
-kubectl patch kyma default-kyma -n kyma-system --type='json' -p='[{"op": "add", "path": "/spec/modules/-", "value": {"name": "keda", "channel": "beta" } }]'
+kyma alpha list module
+```{{exec}}
+
+To check which modules are currently enabled in your cluster, pass a reference to a valid Kyma Custom Resource:
+
+```
+kyma alpha list module -k default-kyma
+```{{exec}}
+
+
+If you prefer CLI  also for enabling/disabling the other modules, you can enable them using the same command as before:
+```
+kyma alpha enable module --name keda --channel beta --wait
 ```{{exec}}
 
 and `cluster-ip` module using this command:
 ```
-kubectl patch kyma default-kyma -n kyma-system --type='json' -p='[{"op": "add", "path": "/spec/modules/-", "value": {"name": "cluster-ip", "channel": "beta" } }]'
+kyma alpha enable module --name cluster-ip --channel beta --wait
 ```{{exec}}
 
 Now you can verify if cluster IP is already available:
