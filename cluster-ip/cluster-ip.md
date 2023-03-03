@@ -1,7 +1,8 @@
 Install cluster-ip operator:
 ```
-kubectl apply -f https://raw.githubusercontent.com/pbochynski/cluster-ip/main/cluster-ip-operator.yaml
+kubectl apply -f https://github.com/pbochynski/cluster-ip/releases/latest/download/cluster-ip-operator.yaml
 ```{{exec}}
+It installs the [latest version](https://github.com/pbochynski/cluster-ip/releases/latest), but you can pick any [other version](https://github.com/pbochynski/cluster-ip/releases). 
 
 Create a resource:
 ```yaml
