@@ -1,6 +1,6 @@
 {
   "title": "Cluster-IP",
-  "description": "",
+  "description": "Determine external IP addresses of your Kubernetes nodes",
   "difficulty": "Beginner",
   "time": "5",
   "details": {
