@@ -1,0 +1,37 @@
+{
+  "title": "Modular Kyma",
+  "description": "",
+  "difficulty": "Beginner",
+  "time": "15",
+  "details": {
+    "steps": [
+      {
+        "title": "Enable istio",
+        "text": "istio.md"
+      },
+      {
+        "title": "Connect to cluster from Kyma Dashboard",
+        "text": "setup-access.md"
+      },
+      {
+        "title": "Enable other modules",
+        "text": "modules.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "*.yaml", "target": "~/"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "code": "kyma-init.sh"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
