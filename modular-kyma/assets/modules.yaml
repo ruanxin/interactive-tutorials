@@ -1,4 +1,4 @@
-apiVersion: operator.kyma-project.io/v1alpha1
+apiVersion: operator.kyma-project.io/v1beta1
 kind: ModuleTemplate
 metadata:
   name: moduletemplate-istio
@@ -59,7 +59,7 @@ spec:
     meta:
       schemaVersion: v2
 ---
-apiVersion: operator.kyma-project.io/v1alpha1
+apiVersion: operator.kyma-project.io/v1beta1
 kind: ModuleTemplate
 metadata:
   name: moduletemplate-keda

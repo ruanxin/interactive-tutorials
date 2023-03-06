@@ -7,7 +7,7 @@ We took the freedom to already install a small operator that installs istio for 
 
 kyma alpha enable module --name istio --channel regular
 ```
-kyma alpha enable module --name istio --channel regular --wait
+kyma alpha enable module istio --channel regular --wait
 ```{{exec}}
 
 Wait until the module is ready and check if IstioOperator resource was created:
