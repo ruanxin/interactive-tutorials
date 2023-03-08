@@ -38,3 +38,4 @@
 # https://github.com/blog/2392-introducing-code-owners/
 
 * @pbochynski
+modular-kyma/ @kyma-project/jellyfish
