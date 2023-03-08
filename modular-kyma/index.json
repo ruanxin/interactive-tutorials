@@ -6,16 +6,16 @@
   "details": {
     "steps": [
       {
-        "title": "Enable istio",
-        "text": "istio.md"
-      },
-      {
         "title": "Connect to cluster from Kyma Dashboard",
         "text": "setup-access.md"
       },
       {
         "title": "Observer & Enable other modules",
         "text": "modules.md"
+      },
+      {
+        "title": "Enable istio",
+        "text": "istio.md"
       }
     ],
     "assets": {

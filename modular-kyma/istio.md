@@ -20,15 +20,8 @@ Check if istio is installed:
 kubectl get pods -A
 ```{{exec}}
 
-You should see a completed istio demo installation:
-```
-NAMESPACE      NAME                                                    READY   STATUS    RESTARTS   AGE
-istio-system   istio-egressgateway-5bdd756dfd-pstmn                    1/1     Running   0          15s
-istio-system   istio-ingressgateway-67f7b5f88d-8lvcj                   1/1     Running   0          15s
-istio-system   istiod-58c6454c57-qw25h                                 1/1     Running   0          23s
-kcp-system     istio-operator-97dcd8f98-fgd8r                          1/1     Running   0          37s
-...
-```
+You should see several istio pods running in `istio-system` namespace.
+
 
 Note: If you prefer kubectl, you can always manually use a patch:
 ```
