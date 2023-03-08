@@ -10,9 +10,9 @@ kyma alpha enable module --name istio --channel regular
 kyma alpha enable module istio --channel regular --wait
 ```{{exec}}
 
-Wait until the module is ready and check if IstioOperator resource was created:
+Wait until the module is ready and check if Istio resource was created:
 ```
-kubectl get istiooperator -A
+kubectl get istio -A
 ```{{exec}}
 
 Check if istio is installed:
