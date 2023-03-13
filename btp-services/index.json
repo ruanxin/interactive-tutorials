@@ -1,5 +1,5 @@
 {
-  "title": "BTP Service",
+  "title": "BTP Services",
   "description": "Consume BTP services from Kubernetes. THIS TUTORIAL IS UNDER DEVELOPMENT!",
   "difficulty": "Beginner",
   "time": "15",
@@ -12,6 +12,10 @@
       {
         "title": "Service Manager credentials",
         "text": "sm-creds.md"
+      },
+      {
+        "title": "kubeconfig for Kyma Dashboard",
+        "text": "setup-access.md"
       }
     ],
     "assets": {
