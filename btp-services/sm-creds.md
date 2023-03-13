@@ -37,4 +37,3 @@ data:
 EOF
 kubectl apply -f sap-btp-manager-secret.yaml
 ```{{exec}}
-
