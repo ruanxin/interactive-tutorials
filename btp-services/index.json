@@ -8,6 +8,10 @@
       {
         "title": "Set up BTP CLI tool",
         "text": "setup-btp-cli.md"
+      },
+      {
+        "title": "Service Manager credentials",
+        "text": "sm-creds.md"
       }
     ],
     "assets": {
