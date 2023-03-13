@@ -1,6 +1,6 @@
 Login to your BTP account:
 ```
-btp login --sso manual
+btp login --url https://cpcli.cf.eu10.hana.ondemand.com --sso manual
 ```{{exec}}
 
 Copy the login URL, paste it in another browser window/tab and log in to your BTP account.
