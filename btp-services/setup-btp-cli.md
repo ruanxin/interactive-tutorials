@@ -12,7 +12,7 @@ btp --format json list accounts/subaccount | jq
 Assign `guid` of the subaccount you want to use to the `SUBACCOUNT` environment variable. If your subaccount name is `trial` you can use this snippet:
 ```
 SUBACCOUNT=$(btp --format json list accounts/subaccount | jq -r '.value[] | select(.displayName == "tutorial") | .guid')
-```{execute}
+```{{exec}}
 
 Otherwise, set it manually:
 ```
