@@ -8,7 +8,7 @@
       {
         "title": "Set up BTP CLI tool",
         "text": "setup-btp-cli.md"
-      },
+      }
     ],
     "assets": {
       "host01": [
