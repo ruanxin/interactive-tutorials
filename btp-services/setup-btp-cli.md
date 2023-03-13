@@ -11,7 +11,7 @@ btp --format json list accounts/subaccount | jq
 
 Assign `guid` of the subaccount you want to use to the `SUBACCOUNT` environment variable. If your subaccount name is `trial` you can use this snippet:
 ```
-SUBACCOUNT=$(btp --format json list accounts/subaccount | jq -r '.value[] | select(.displayName == "tutorial") | .guid')
+SUBACCOUNT=$(btp --format json list accounts/subaccount | jq -r '.value[] | select(.displayName == "trial") | .guid')
 ```{{exec}}
 
 Otherwise, set it manually:
@@ -32,4 +32,4 @@ btp create services/binding --subaccount $SUBACCOUNT --name smbinding --instance
 Check if binding has ready property set to true:
 ```
 btp --format json  get services/binding --name smbinding --subaccount $SUBACCOUNT | jq
-```
+```{{exec}}
