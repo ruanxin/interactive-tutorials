@@ -1,0 +1,29 @@
+{
+  "title": "BTP Service",
+  "description": "Consume BTP services from Kubernetes. THIS TUTORIAL IS UNDER DEVELOPMENT!",
+  "difficulty": "Beginner",
+  "time": "15",
+  "details": {
+    "steps": [
+      {
+        "title": "Set up BTP CLI tool",
+        "text": "setup-btp-cli.md"
+      },
+    ],
+    "assets": {
+      "host01": [
+        {"file": "*.yaml", "target": "~/deployments/"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "code": "init.sh"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
