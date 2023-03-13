@@ -16,7 +16,7 @@ btp --format json  get services/binding --name smbinding --subaccount $SUBACCOUN
 Create `creds.json` file from binding:
 ```
 btp --format json  get services/binding --name smbinding --subaccount $SUBACCOUNT | jq -r '.credentials' >creds.json
-```
+```{{exec}}
 
 And now create kubernetes secret out of it:
 ```
@@ -35,4 +35,6 @@ data:
   tokenurl: $(jq --raw-output '.url | @base64' creds.json)
   cluster_id: dGVzdF9jbHVzdGVyX2lk
 EOF
+kubectl apply -f sap-btp-manager-secret.yaml
 ```{{exec}}
+
