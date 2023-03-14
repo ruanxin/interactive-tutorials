@@ -5,11 +5,13 @@ kubectl apply -f deployments/btp-manager.yaml
 
 Create BTPOperator custom resource
 ```
+cat <<EOF | kubectl apply -f -
 apiVersion: operator.kyma-project.io/v1alpha1
 kind: BtpOperator
 metadata:
   name: btpoperator-sample
   namespace: kyma-system
+EOF
 ```{{exec}}
 
 Check the status of installation:
