@@ -386,16 +386,3 @@ spec:
         runAsNonRoot: true
       serviceAccountName: btp-manager-controller-manager
       terminationGracePeriodSeconds: 10
----
-apiVersion: operator.kyma-project.io/v1alpha1
-kind: BtpOperator
-metadata:
-  labels:
-    app.kubernetes.io/name: btpoperator
-    app.kubernetes.io/instance: btpoperator-sample
-    app.kubernetes.io/part-of: btp-manager
-    app.kubernetes.io/managed-by: kustomize
-    app.kubernetes.io/created-by: btp-manager
-  name: btpoperator-sample
-  namespace: kyma-system
-spec:

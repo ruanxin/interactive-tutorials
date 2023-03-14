@@ -3,6 +3,15 @@ Install [BTP manager](https://github.com/kyma-project/btp-manager):
 kubectl apply -f deployments/btp-manager.yaml
 ```{{exec}}
 
+Create BTPOperator custom resource
+```
+apiVersion: operator.kyma-project.io/v1alpha1
+kind: BtpOperator
+metadata:
+  name: btpoperator-sample
+  namespace: kyma-system
+```{{exec}}
+
 Check the status of installation:
 ```
 kubectl get btpoperator -n kyma-system btpoperator-sample
