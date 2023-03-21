@@ -9,10 +9,10 @@ cat <<EOF | kubectl apply -n kyma-system -f -
 apiVersion: operator.kyma-project.io/v1alpha1
 kind: Serverless
 metadata:
-name: serverless-sample
+  name: serverless-sample
 spec:
-    dockerRegistry:
-        enableInternal: false
-        secretName: my-secret
+  dockerRegistry:
+    enableInternal: false
+    secretName: my-secret
 EOF
 ```{{exec}}
