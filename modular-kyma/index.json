@@ -16,6 +16,10 @@
       {
         "title": "Enable istio",
         "text": "istio.md"
+      },
+      {
+        "title": "Manage Channel",
+        "text": "channel.md"
       }
     ],
     "assets": {

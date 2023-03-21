@@ -19,7 +19,7 @@ kyma alpha enable module keda --channel alpha --wait
 
 and `cluster-ip` module using this command:
 ```
-kyma alpha enable module cluster-ip --channel beta --wait
+kyma alpha enable module cluster-ip --channel fast --wait
 ```{{exec}}
 
 Now you can verify if cluster IP is already available:
