@@ -16,3 +16,8 @@ spec:
     secretName: my-secret
 EOF
 ```{{exec}}
+
+Check the status of the serverless instance:
+```
+kubectl get serverless serverless-sample -n kyma-system -oyaml
+```{{exec}}
