@@ -38,4 +38,4 @@ Expose the function on port 8080
 kubectl port-forward service/fibo-fn 8080:80
 ```{{exec}}
 
-And you can access it from your browser: [{{TRAFFIC_HOST1_8080}}]({{TRAFFIC_HOST1_8080}})
+And you can access it from your browser: {{TRAFFIC_HOST1_8080}}
