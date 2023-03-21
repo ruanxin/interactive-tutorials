@@ -14,7 +14,7 @@ kyma alpha list module -k default-kyma
 
 If you prefer CLI  also for enabling/disabling the other modules, you can enable them using the same command as before:
 ```
-kyma alpha enable module keda --channel beta --wait
+kyma alpha enable module keda --channel alpha --wait
 ```{{exec}}
 
 and `cluster-ip` module using this command:
