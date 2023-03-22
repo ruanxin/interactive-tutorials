@@ -14,12 +14,16 @@
         "text": "modules.md"
       },
       {
-        "title": "Enable istio",
-        "text": "istio.md"
+        "title": "Channel Introduction",
+        "text": "channel_intro.md"
       },
       {
-        "title": "Manage Channel",
-        "text": "channel.md"
+        "title": "Use cases: Use channel for early testing of new features",
+        "text": "channel1.md"
+      },
+      {
+        "title": "Use cases: Use channel for version promotion",
+        "text": "channel2.md"
       }
     ],
     "assets": {
