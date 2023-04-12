@@ -1,4 +1,4 @@
-You can now enable modules in the Kyma Dashboard. Go to the namespace `kyma-system`, open the Kyma resource (in the `Kyma` section), edit it and add `keda` or `cluster-ip` module from beta channel. 
+You can now enable modules in the Kyma Dashboard. Go to the namespace `kyma-system`, open the Kyma resource (in the `Kyma` section), edit it and add `cluster-ip` module from beta channel. 
 
 Alternatively, feel free to observe all available modules in the cluster with the CLI:
 ```
@@ -13,11 +13,6 @@ kyma alpha list module -k default-kyma
 
 
 If you prefer CLI  also for enabling/disabling the other modules, you can enable them using the same command as before:
-```
-kyma alpha enable module keda --channel alpha --wait
-```{{exec}}
-
-and `cluster-ip` module using this command:
 ```
 kyma alpha enable module cluster-ip --channel fast --wait
 ```{{exec}}
