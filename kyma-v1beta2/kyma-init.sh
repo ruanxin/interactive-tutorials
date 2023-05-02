@@ -12,7 +12,7 @@ kubectl create ns kcp-system
 kubectl create ns kyma-system
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
 
-kubectl apply -k kustomization.yaml
+kubectl apply -k .
 kubectl apply -f cluster-ip-module-template-fast.yaml
 kubectl apply -f template-noconfig.yaml
 kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
