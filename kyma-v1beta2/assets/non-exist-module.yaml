@@ -1,0 +1,3 @@
+spec:
+  modules:
+  - name: non-exist-module

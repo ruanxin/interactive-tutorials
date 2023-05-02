@@ -11,7 +11,7 @@ kubectl apply -f https://raw.githubusercontent.com/prometheus-community/helm-cha
 kubectl create ns kcp-system
 kubectl create ns kyma-system
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
-
+sleep 10
 kubectl apply -k .
 kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
 echo "Kyma Control Plane is ready. Go to next step."

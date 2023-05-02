@@ -4,5 +4,13 @@ kubectl apply -f https://raw.githubusercontent.com/kyma-project/lifecycle-manage
 ```{{exec}}
 
 ```
-kyma alpha enable module non-exist-module
+kubectl patch kyma -n kyma-system default-kyma --type merge --patch-file add-sync-label.yaml
+```{{exec}}
+
+```
+kubectl patch kyma -n kyma-system default-kyma --type merge --patch-file non-exist-module.yaml
+```{{exec}}
+
+```
+kubectl patch kyma -n kyma-system default-kyma --type merge --patch-file no-module.yaml
 ```{{exec}}

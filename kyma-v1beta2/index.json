@@ -10,6 +10,10 @@
         "text": "wrong-module.md"
       },
       {
+        "title": "Internal module",
+        "text": "internal-module.md"
+      },
+      {
         "title": "Observer & Enable other modules",
         "text": "modules.md"
       }

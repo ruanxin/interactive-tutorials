@@ -13,5 +13,8 @@ patches:
       - op: add
         path: /spec/template/spec/containers/0/args/-
         value: --in-kcp-mode
+      - op: replace
+        path: /spec/template/spec/containers/0/imagePullPolicy
+        value: Always
     target:
       kind: Deployment
