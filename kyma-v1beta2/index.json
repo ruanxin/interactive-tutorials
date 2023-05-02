@@ -6,8 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Connect to cluster from Kyma Dashboard",
-        "text": "setup-access.md"
+        "title": "Wrong module",
+        "text": "wrong-module.md"
       },
       {
         "title": "Observer & Enable other modules",
