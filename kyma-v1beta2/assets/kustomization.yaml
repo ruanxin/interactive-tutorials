@@ -5,6 +5,7 @@ resources:
 commonLabels:
   app.kubernetes.io/part-of: kcp-dev
 images:
-  - name: europe-docker.pkg.dev/kyma-project/dev/lifecycle-manager
+  - name: europe-docker.pkg.dev/kyma-project/prod/lifecycle-manager
+    newName: europe-docker.pkg.dev/kyma-project/dev/lifecycle-manager
     newTag: PR-553
 
