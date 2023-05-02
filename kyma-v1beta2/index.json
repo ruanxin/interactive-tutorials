@@ -1,0 +1,33 @@
+{
+  "title": "Lifecyle Manager v1beta2 Changes",
+  "description": "Enable modules with Kyma Lifecycle Manager",
+  "difficulty": "Beginner",
+  "time": "15",
+  "details": {
+    "steps": [
+      {
+        "title": "Connect to cluster from Kyma Dashboard",
+        "text": "setup-access.md"
+      },
+      {
+        "title": "Observer & Enable other modules",
+        "text": "modules.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "*.yaml", "target": "~/"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "code": "kyma-init.sh"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
