@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - https://github.com/ruanxin/kyma-operator//config/control-plane?ref=v1beta2
+commonLabels:
+  app.kubernetes.io/part-of: kcp-dev
+images:
+  - name: europe-docker.pkg.dev/kyma-project/dev/lifecycle-manager
+    newTag: PR-553
+
