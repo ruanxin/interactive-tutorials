@@ -2,7 +2,7 @@ apiVersion: operator.kyma-project.io/v1beta1
 kind: ModuleTemplate
 metadata:
   name: moduletemplate-template-operator
-  namespace: kcp-system
+  namespace: kyma-system
   labels:
     "operator.kyma-project.io/managed-by": "lifecycle-manager"
     "operator.kyma-project.io/controller-name": "manifest"

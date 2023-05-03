@@ -14,8 +14,8 @@
         "text": "internal-module.md"
       },
       {
-        "title": "Observer & Enable other modules",
-        "text": "modules.md"
+        "title": "Remote ModuleTemplate",
+        "text": "remote-mt.md"
       }
     ],
     "assets": {

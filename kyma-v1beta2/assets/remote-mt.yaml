@@ -1,0 +1,5 @@
+spec:
+  modules:
+  - name: template-operator
+    channel: regular
+    remoteModuleTemplateRef: template-operator

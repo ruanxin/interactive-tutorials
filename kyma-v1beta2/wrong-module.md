@@ -4,6 +4,11 @@ kubectl apply -f https://raw.githubusercontent.com/kyma-project/lifecycle-manage
 ```{{exec}}
 
 ```
+kubectl apply -f default-kyma-secret.yaml
+```{{exec}}
+
+
+```
 kubectl patch kyma -n kyma-system default-kyma --type merge --patch-file add-sync-label.yaml
 ```{{exec}}
 
